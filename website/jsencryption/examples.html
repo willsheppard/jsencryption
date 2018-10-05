@@ -1,0 +1,279 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<title>JavaScript Encryption and Decryption - Examples</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+		<link rel="shortcut icon" href="http://www.vincentcheung.ca/img/favicon.ico" />
+
+		<link rel="stylesheet" type="text/css" href="http://www.vincentcheung.ca/base.css" />
+		<link rel="stylesheet" type="text/css" href="http://www.vincentcheung.ca/smallheader.css" />
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		
+		<style type="text/css">
+			h3 {
+				padding-bottom: 1em;
+			}
+			
+			p.code {
+				margin-top: 0em;
+				padding: 1em;
+				background-color: #fbfcfd;
+				border: 1px solid gray;
+			}
+		</style>
+		
+		<script type="text/javascript" src="http://www.vincentcheung.ca/jsencryption/jsencryption.js"></script>
+	</head>
+	<body>
+		<div id="container">
+			<div id="content-top"></div>
+			<div id="content">
+				<h1>Examples</h1>
+
+				<h3 style="padding-bottom: 0">The decryption key for the examples below is:&nbsp; <span class="highlight">the key</span></h3>
+				
+				<div class="line"></div>
+				
+				<h3>Example 1:&nbsp; <span class="highlight">Basic version</span></h3>
+				
+				<div id="v61nmxuS" title="U2FsdGVkX19tc8R29pQQ1YN+0Folrp89kM7gOVRLv2o=">
+					<a href="javascript:decryptText('v61nmxuS')">Show encrypted text</a>
+				</div>
+
+				<p class="newparagraph">Code:</p>
+				<p class="code">
+					<code>
+						&lt;div id="<em class="highlight">uniqueID</em>" title="<em class="highlight">encrypted text</em>"&gt;<br />
+						&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="javascript:decryptText('<em class="highlight">uniqueID</em>')"&gt;Show encrypted text&lt;/a&gt;<br />
+						&lt;/div&gt;
+					</code>
+				</p>
+				<p>
+					Plain text:<br />
+					Hello World!
+				</p>
+				
+				<div class="line"></div>
+
+				<h3>Example 2:&nbsp; <span class="highlight">Hidden image and link</span></h3>
+				
+				<div id="9MDiZu4q" title="U2FsdGVkX18ppzolH5owO+KL5oVwObCWueb+pugzIuByqTACrwlo1s6xipWMjf/NYeAzXdznr+ZGtVMlOXqMO4XllfEqSh0P+WY8CjlGJvKDoD7L/FBLeLMCRzA7Pwj+cBftV/mgtUViXxGzGf7MVUIWSY9Rs3BFJIOtCMOw/PTrcrj10imQMQ/JQqnpKxovlKnMJw6w72Pq1PDb28ol1tfG4SoYvoyFUJda6Q/Sife4LIgcDiflLwtSJVxVL805MMD1s8KkuFmu+7h80DhBqw==">
+					<a href="javascript:decryptText('9MDiZu4q')">Show encrypted info</a>
+				</div>
+												
+				<p class="newparagraph">Code:</p>
+				<p class="code">
+					<code>
+						&lt;div id="<em class="highlight">uniqueID</em>" title="<em class="highlight">encrypted text</em>"&gt;<br />
+						&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="javascript:decryptText('<em class="highlight">uniqueID</em>')"&gt;Show encrypted info&lt;/a&gt;<br />
+						&lt;/div&gt;
+					</code>
+				</p>
+				<p>
+					Plain text:<br />
+					&lt;a href="http://www.vincentcheung.ca/jsencryption/"&gt;&lt;img src="img/JSEncryptionLogo150.png" /&gt;&lt;/a&gt;&lt;br /&gt;<br />
+					&lt;a href="http://www.vincentcheung.ca/jsencryption/"&gt;JavaScript Encryption&lt;/a&gt;
+					
+				</p>
+				
+				<div class="line"></div>
+				
+				<h3>Example 3:&nbsp; <span class="highlight">Inline text</span></h3>
+				
+				<a href="javascript:decryptText('umAGpTAl')">Reveal</a>
+				<br />
+				<br />
+				The secret... <span id="umAGpTAl" title="U2FsdGVkX18Vl2Nb79ha2puFcNEn7tCGivoHmgTAz5scZ0KdM1DzDs16SbkHPO1D"></span>
+												
+				<p class="newparagraph">Code:</p>
+				<p class="code">
+					<code>
+						&lt;a href="javascript:decryptText('<em class="highlight">uniqueID</em>')"&gt;Reveal&lt;/a&gt;<br />
+						&lt;br /&gt;<br />
+						&lt;br /&gt;<br />
+						The secret... &lt;span id="<em class="highlight">uniqueID</em>" title="<em class="highlight">encrypted text</em>"&gt;&lt;/span&gt;
+					</code>
+				</p>
+				<p>
+					Plain text:<br />
+					has been revealed!
+				</p>
+				
+				<div class="line"></div>
+
+				<h3>Example 4:&nbsp; <span class="highlight">Hidden text</span></h3>
+
+				There is <span id="IqQdJpez" title="U2FsdGVkX191buneMP4bgHB6/15hkKRTL1E8oDzN8LQ="><a href="javascript:decryptText('IqQdJpez')">***</a></span> here
+												
+				<p class="newparagraph">Code:</p>
+				<p class="code">
+					<code>
+						There is &lt;span id="<em class="highlight">uniqueID</em>" title="<em class="highlight">encrypted text</em>"&gt;<br />
+						&lt;a href="javascript:decryptText('<em class="highlight">uniqueID</em>')"&gt;***&lt;/a&gt;&lt;/span&gt; here
+					</code>
+				</p>
+				<p>
+					Plain text:<br />
+					hidden text
+				</p>
+				
+				<div class="line"></div>
+
+				<h3>Example 5:&nbsp; <span class="highlight">Hide your email address from spammers</span></h3>
+
+				Email address: <span id="i7N7c38e" title="U2FsdGVkX19G97x4t1HLdX0D5V/9Ri1den/gbCi93bVJfq2O146fWfWcAAncwE6BojZNaqJvjzgMAMCphY3/sISucR6H2mbufCVpQyOD7YzRqrfmhtiRzbrHy6W2k3TL"><a href="javascript:decryptText('i7N7c38e', 'Enter password:')">Show email address</a> (password: the key)</span>
+
+				<p class="newparagraph">Code:</p>
+				<p class="code">
+					<code>
+						Email address: &lt;span id="<em class="highlight">uniqueID</em>" title="<em class="highlight">encrypted text</em>"&gt;&lt;a href="javascript:decryptText('<em class="highlight">uniqueID</em>', 'Enter password:')"&gt;Show email address&lt;/a&gt; (password: the key)&lt;/span&gt;
+					</code>
+				</p>
+				<p>
+					Plain text:<br />
+					&lt;a href="mailto:***"&gt;***&lt;/a&gt;
+				</p>
+				
+				<div class="line"></div>
+
+				<h3>Example 6:&nbsp; <span class="highlight">Multiple encryptions</span></h3>
+
+				<a href="javascript:decryptText(['lwos0Zpe', '11x2RrpJ'])">Decrypt text</a>
+				<br />
+				<br />
+				This is <span id="lwos0Zpe" title="U2FsdGVkX1+lqZ93SsFE9cjTDvh4PIwtKPNfgNibtjNeqiUHwVYGumjX8i3BawT0MJ6TnQZoyW+Eb1dQ9N8D/g=="></span>cool<span id="11x2RrpJ" title="U2FsdGVkX190FTBb1kg0+vuz9qw9JWb0XJXyTikWWpvb2PDPrsKNTH8lyR6RpPMtVbDodC5z+/4x7AwBXlKr3A=="></span>
+												
+				<p class="newparagraph">Code:</p>
+				<p class="code">
+					<code>
+						&lt;a href="javascript:decryptText(['<em class="highlight">uniqueID1</em>', '<em class="highlight">uniqueID2</em>'])"&gt;Decrypt text&lt;/a&gt;<br />
+						&lt;br /&gt;<br />
+						&lt;br /&gt;<br />
+						This is &lt;span id="<em class="highlight">uniqueID1</em>" title="<em class="highlight">encrypted text 1</em>"&gt;&lt;/span&gt;cool&lt;span id="<em class="highlight">uniqueID2</em>" title="<em class="highlight">encrypted text 2</em>"&gt;&lt;/span&gt;
+					</code>
+				</p>
+				<p>
+					Plain text:<br />
+					&lt;span style="color:red">really&lt;/span&gt; and &lt;span style="color:red"&gt;!!!&lt;/span&gt;
+				</p>
+				
+				<div class="line"></div>
+				
+				<h3>Example 7:&nbsp; <span class="highlight">More than 1 key</span>&nbsp; <span style="font-weight: normal">(the second key is:&nbsp; the second key)</span></h3>
+
+				<a href="javascript:decryptText(['fivCMhw9', 'HNMqQqky'], 'Enter one of the decryption keys:')">Decrypt</a>
+				<br />
+				<br />
+				<span id="fivCMhw9" title="U2FsdGVkX1+v3G2x3uW+Gr8dSWMH6OZAX2YyWo1QpQ4=">***</span> went <span id="HNMqQqky" title="U2FsdGVkX19LpPISVYx3k0onqmFDFnzZsdfupdsLxDI=">***</span>
+
+				<p class="newparagraph">Code:</p>
+				<p class="code">	
+					<code>
+						&lt;a href="javascript:decryptText(['<em class="highlight">uniqueID1</em>', '<em class="highlight">uniqueID2</em>'], 'Enter one of the decryption keys:')"&gt;Decrypt&lt;/a&gt;<br />
+						&lt;br /&gt;<br />
+						&lt;br /&gt;<br />
+						&lt;span id="<em class="highlight">uniqueID1</em>" title="<em class="highlight">encrypted text 1</em>"&gt;***&lt;/span&gt; went &lt;span id="<em class="highlight">uniqueID2</em>" title="<em class="highlight">encrypted text 2</em>"&gt;***&lt;/span&gt;
+					</code>
+				</p>
+				<p>
+					Plain text:<br />
+					"Jack and Jill" (encrypted with one key) and "up the hill" (encrypted with the second key)
+				</p>
+				
+				<div class="line"></div>
+				
+				<h3>Example 8:&nbsp; <span class="highlight">Big example</span>&nbsp; <span style="font-weight: normal">(the second key is:&nbsp; the second key)</span></h3>
+
+				<a href="javascript:decryptText(['2LZE2DGT', 'Sz88GfgM'])">Show encrypted text</a><br />
+				<div id="2LZE2DGT" title="U2FsdGVkX19PfzWxjHfeib3lxjjlkrH1PGGATZ2t7DeFWXl1Bar0DOh1SgjA1n+AO9COsuaakAmuv7FlSsvlW7mAx+Lqt90uYVWgKDc+mdaMEHRp6lNMgEiCYU1t2DqHj6SLq5A7bq0C81f+15nu9tNOzyOQSqUrvla2BPqYdWQJS+8A8+xVXkzi6Y8JMq/UIH6M6UiaWe0+Wfkw1a3xez4N1R9FEAYWJociH7N78MbZ1FMjZNUl3PopEzx88qctKSupjzkX2W6yXiTXWiyK8q4+2FfKJCh5WFDRgWg4Fa2wAOMg4acvwVUQNfzZVv6OblVrLi5/GJYb1HRvhBIjWJtPwkcjyk4eZZ+D/uP2rXQh7yImLVfYR5y5b4w/K+u3wtroqT7NKoFBNh/qS6LMRrxBdNPZFeCvH6esMsfMkQU6cWHvbtk0a1mo1EgjBZzJ9dZ3GjUeoO47bvmcX47v0adJvedE84ijLuCs2dNkA1I854WJ9ZVHA1tGY6XUHFm3vsYYdrhXMX/G0dJMbH9JbF4gcZzhUyuQjhdF7rb7RavcdA7Ikepf2Vq6Hxyn7C5vOP7WGH0QkAZW3YHRiO3NZqSs4WNWAztvDJkCf3cTsIQIz4hNEvJx/BJNop+CEg3bKJdNigYHFIGV6RU3Ck14RNTcVcfhMqlvjWar1ozYT30ukXfHpXMIV+vuJPpFIwdJkDyNTUMQRnHe1s/5Q1NLu61S8PUzSuGgm7m1u4zmMjjWIOLXzq/omD7IaMPTqGI2kd0M0dCoaggwaYqoJhrEDqrFJSpPavWMAXZXh1Cu4u9Z1CBxswhUZuUBdcIoZPk7zTGMlgRlQ3PFo5hv8Hg/HJKVo5d2NiLkz7YCd5GJ7s9XY3bb70IAlDg5YHrJJLyFrqHjRA79iaL/F+IIX933AtLYrvmjp/1BaM9BxgOYD4++OK1Ndk0qnZ0IMLm4k664VeW8MkmWLA+seILnGWFjgNjkhmTi4eFNJONqSYsc+okqQJkWArAlr++cGMkJiz+Z2QPAbeBxzlE+AO0hltxaWcBM5L56vA6Pfzmfn6/0DAJwqu0X/WQqvcJWkB+msw9uaWZRQ9SjRItJtKyuivqD2mbPBXNEoK8r7P7NJM+5whCvQhWyfSvktJxKknvLLM1y+B4q4BTLcgj0z5soEbp4VYWT7G0n1Z+RLPuKztmtWnsf0TdorszXT6vO6jFn/Pvz+5HhAme5qYjdTufFcEw9QkGE1zOXTyOWv6T4h6x5NzilgxAyJSBmMLsmPPZRpcv1iLOWGkcDzbTMdUXAVPQuOOjC/2fTzcHFuMPSoO/Rp+OhVqtQYT0Eudh9caj0iMqlf82+ujWeHoDuHHaSudkKVJE4K4NEkzN8SEYEd3NhVpyJycPzIss2dxXJHjFtPyelEcT+VHgXcREitTZAYm8iP/KffLiunJzsfIJWbT+ctoJ41u6ssJJUpXY4NmHL7buwUSagbMlfPWi8jdF/03hhPsEb40Muvmt2DjAR5osKBLv17bJ3GTsZ7G0j46W3y08iOwQFlujS+UZr+JOU1ivB2kfY9n8CrfKUopGGfRVDQh6y1hI1ZYTi6zWp4GwRJSapxMUuhcd0cARKT4vFZsFdqz/fkbd7FO8imIFiLsujgyaqVvAp3SZZF15SrBSRlWSJrXxLyZ+UcXUhIOzFVUhwpUYVpRyDRGftt9BOpGmHWPxZtoRVM3pT13UqYCJb/t1SgdQxRMsSac4Q/c4ZAmbKzMZ58h/bYCREyS3dsDXSbg6yPFgFMVy7Vhc+aYIsBhNptgiNi81qZoyRqACg8sfxYfil+ZTlJC5nliWf+jZUA93PUA8qNgCYPenkUy9bomz9xRKn2oGBxqXIt3D7TkJuwJqvtSvN9I+QyMqroAXNGdmRhwcQuEI/r0hr8P6Mt5ueEm2QZ8008x1sh+KcTuP7jvWLa0Udsmef+ixuxovT+0rskp42Z8I5U6jtGcmAvhxP0DzvKxpLk4Ck+yw8MqviF2qjdYXwvtkZOw/JtA8Wb6u4q9amnJjJFrSnKpqrRP1pXkIX1eltYk9yP7aRMkIjLiUn6/jlNHv9vJ2EAjMfnob8BdJlYJGfDLtY2caTGIUG8UV5uU+dtE8v9UtT7ZH8KAEMV14eLv0lR+mamCVxJ1eLMHNic8SVUIpqaxnGeFPbsiXY2LisaAAq/bpmpcYK7aszCxncqZFxEUjlnNfN5HJ3Fe+DCrQNpMNEGb7MeDA2egvLn4AJJYn/qm2evWkXhmVpIj5ovaik+JABjRRzpoWf4bTBhuIeSEgikh6gy81kOnAXfKp1DLKitfhQHbIdZs4YPtrKKiZGjsp58bYaBpdOu028bwO7boy50ROIDeqf7VWrJGbfNZ5QAmmGbKJT0e8iB0LCp5o4NzkoKdtu2+Mm7vsppq/QA4my48Ak8MC8Gz5HMoVIyC+rclbUkk7RUFbBKLKg/ocd9IFH8yPQtXweH4gKUTk6CDn/Cp0uQ3ivwNZ3gMptWZ+vKruWpx3H7QEcMg0R1xuWGbu3hl+jZQV8N5eTAfOnv6KDqoC/2S5RhU+gMII9yQrh3Yd+dKujoJK22CgsdOr8bqoD1wfesTuFY4rxI7fLfWpet5qAMlILSXI8brPKLSgKjhR3rr1PSnAmunpZCE1+0oqwr/rwgO5Bdt5HofAMOAxzV7H+rbofW2wuRMAV981REhkoKHtjDiHrYnl7/O4czdQuYSbeV3xkLHu7TU/1XHIHQ+9APIdPtegIX/OMeUh1uSZU21kcPCIH/enmz0DNwZ+eDQ7t07YHBC/zpc8dBn9xVXRA5mxoKkSW9XwOrevub6wUcuYFqxpsCh7UCl0/CuyxDMRetw9fWvPusMZBXRp0iDHjXcbN415ixLK/LKmBEEAeAyqUQOSZPQ09Xio8bhIpU7U0T2+9KVpnjTIJuErJ0Q6zM92DIUA1XUnFhqKPtOJJrLRuaaRcSIfZMjvNYwagQIbkTRXQCWHWPEtUkTSuFdE5EACUgnkuEN47atw9PDgeqi45G5Stg5T2KUpNCImrf/S/416NgC/ga/6UCZe+VvM1U3FEMXjAm0n8T1aplO5WVgsSN+J4uHjK9vcSxH6F8HsUMencHhMM/xkV6lvSd60jtyfy4Z5FxAcT49MhSKyqxh606e4LbEejwCG3iT4lFYHSFBPQsFTLLDcN8klQMJxUPQD62+q+Uuw7fj1V7ZPxVmNeqNWdAZuehM1F0xvSFfPdUkUPhxxgVcbVUYRh3s7jQJs54NH4io4rEG+0J/FhuirKn0T1zc6se3UNZ6nHeJ4ywEdnyU1SSuGCNyhuZC14LWIEBswcpHZdxylOFAeNLyuhh36m3U0kQ3AFVqzaGSnrJVH5EW5SHvMJcu63txZXjnMgCRYmaXT1eHYvdfXkLKqUQEjUgOYzWdAspdXkEI5x2M51zqbHc73gds92TtcN8YqMJrw6lAuQE1pGCxX6O4KmNaiRoNUC0JZhwo/hwVhtBYULh1w+KcYySX61UaGYB+iBOPj7RU1lT5Tohhly6wG8Yc3uABT783KgnFyCPL4Ks3wmImy8N9mgJEJNEx9lhnZmP5n5gCqO26N2A92hY7RmWCIoZkI90MNlUaQ3lzz70sEVK9HIEGCDf8+8XRocgkQVoVbaJF9k3FvDi3zqavynfVhvn8rMzlu5NQaKPI3lwnmsIrcqNlcRx6zEazw+3JjE2m7RtEHOPrT3nDXnaFh14UHXWGMxe405Dw7ZK5ZcoADjv83Rib6X+jd6oAZbZNsyZCzonzi3o32rK8+qS0SHj+Wh47WoFutq5cr3pyE2ZhAbJKJPJBmghm4qLscMb7zIUOGwh+fArFKAadB6F4i6KCCW9t+UT8T+PlD43ledrHXQX9oUz8pJfMQfeLlcqFUGjZYdHISdIaKiPjmJHC2q5rsrm3VLlf1Ui+ilvxqfF04XVnGmfUQnxPONKAWOs+EZSSZZhslDqtzK0P2Iy3n3h7XWMjCgp3gqjx3XLVgnM42UkaZ//S/pxsGruVSq9ghLRONSnrt0h6QnNGR5Jk/my57q23M+NWxDd+/Sdb7A6p1PKcmkjgCE0VCt8Z6iv2aBBvzLgdiVv9lNr/JZ9ePysiQwveQZcf9T/NSZKwCe4EylKCqXYIL8I5tK52qgyJIGJAfIAmgfXsHXXo7JTgGXSHcx2dxv7C78vo2iEHfBtrHIHNK33Z5C2UuQ4cBEc5gL2NyT2gr9PIGDR8tuBrK0K9eheCCC2FvIZWeKPNYwjT0="></div>
+					
+				<div id="Sz88GfgM" title="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"></div>
+
+				<div class="clear"></div>
+
+				<p class="newparagraph">Code:</p>
+				<p class="code">	
+					<code>
+						&lt;a href="javascript:decryptText(['<em class="highlight">uniqueID1</em>', '<em class="highlight">uniqueID2</em>'])"&gt;Show encrypted text&lt;/a&gt;<br />
+						&lt;br /&gt;<br />
+						&lt;div id="<em class="highlight">uniqueID1</em>" title="<em class="highlight">encrypted text 1</em>"&gt;&lt;/div&gt;<br />
+						&lt;div id="<em class="highlight">uniqueID2</em>" title="<em class="highlight">encrypted text 2</em>"&gt;&lt;/div&gt;<br />
+						&lt;div class="clear"&gt;&lt;/div&gt;
+					</code>
+				</p>
+				<p>
+					Plain text:<br />
+					&lt;div style="float:left; width: 48%"&gt;Lots of text&lt;/div&gt; (encrypted with one key)<br />
+					&lt;div style="float:right; width: 48%"&gt;Lots more text&lt;/div&gt; (encrypted with the second key)
+				</p>
+
+				<div class="line"></div>
+				
+				<h3>Example 9:&nbsp; <span class="highlight">My personal blog</span></h3>
+				
+				Sometimes I use encryption on my personal blog to keep things hidden from prying eyes.  Most of my blog can be viewed by anyone, but every once in a while, I want to write about something that I don't want certain people to read.
+				
+				<p>I give the key to people that I trust so they can read the encrypted posts.  I use several different keys for my posts and different people have different keys.</p>
+				
+				<p>These are my <a href="http://veenix.blogspot.com/search/label/encrypted">encrypted blog posts</a>.  No, you may not have the key :)</p>
+			</div>
+			<div id="content-bottom"></div>
+			
+			<div id="subheader">
+				<a id="header-logo" href="http://www.vincentcheung.ca/jsencryption/"></a>
+				<div id="submenu">
+					<ul>
+						<li><a href="http://www.vincentcheung.ca/jsencryption/">Encrypt/Decrypt</a></li>
+						<li><a href="features.html">Features</a></li>
+						<li><a class="currpage" href="examples.html">Examples</a></li>
+						<li><a href="instructions.html">Instructions</a></li>
+						<li><a href="faq.html">FAQ</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div id="header">
+				<a id="header-home" href="http://www.vincentcheung.ca/"></a>
+				<ul id="header-menu">
+					<li><a href="http://www.vincentcheung.ca/projects.html">Projects</a>
+						<ul id="menu-sub-projects">
+							<li><a href="http://www.shapecollage.com/">Shape Collage</a></li>
+							<li><a href="http://www.vincentcheung.ca/facedown/">FaceDown</a></li>
+							<li><a href="http://www.vincentcheung.ca/jsencryption/">JavaScript Encryption</a></li>
+						</ul>
+					</li>
+					<li><a href="http://www.vincentcheung.ca/about.html">About</a></li>
+					<li><a href="http://www.vincentcheung.ca/blog/">Blog</a></li>
+					<li id="header-end"><a href="http://www.vincentcheung.ca/donate.html">Donate</a></li>
+				</ul>
+			</div>
+			
+			<div id="footer">
+				<div id="footer-menu"><a href="http://www.vincentcheung.ca/">Home</a> | <a href="http://www.vincentcheung.ca/projects.html">Projects</a> | <a href="http://www.vincentcheung.ca/about.html">About</a> | <a href="http://www.vincentcheung.ca/blog/">Blog</a> | <a href="http://www.vincentcheung.ca/donate.html">Donate</a></div>
+					
+				<div id="footer-copyright">Copyright &copy; 2009 <a href="http://www.vincentcheung.ca/">Vincent Cheung</a></div>
+			</div>
+		</div>
+
+		<div id="stats">
+			<!-- Start of StatCounter Code -->
+			<script type="text/javascript">
+			sc_project=2126540; 
+			sc_invisible=1; 
+			sc_partition=19; 
+			sc_security="616c509a"; 
+			</script>
+
+			<script type="text/javascript" src="http://www.statcounter.com/counter/counter_xhtml.js"></script><noscript><div class="statcounter"><a href="http://www.statcounter.com/"><img class="statcounter" src="http://c20.statcounter.com/2126540/0/616c509a/1/" alt="stats" /></a></div></noscript>
+			<!-- End of StatCounter Code -->
+	
+			<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+			</script>
+			<script type="text/javascript">
+			_uacct = "UA-52818-5";
+			urchinTracker();
+			</script>
+		</div>
+	</body>
+</html>
